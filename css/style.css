@@ -1,0 +1,625 @@
+:root {
+    --main-color: #0078ff;
+}
+
+/* Navbar */
+
+.links a {
+    color: white;
+    position: relative;
+}
+
+.links ul a:hover {
+    color: white;
+}
+
+.links ul a::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.links ul a:hover::before {
+    width: 70%;
+}
+
+.dropdown ul a {
+    color: black;
+}
+
+.dropdown ul a:hover {
+    color: var(--main-color);
+    background-color: transparent;
+}
+
+body:not(:has(:target)) .home-link::before,
+body:has(header:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.portfolio:target) .portfolio-link::before,
+body:has(.blog:target) .blog-link::before,
+body:has(.contact-us:target) .contact-link::before {
+    width: 70%;
+}
+
+/* Header */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+header h3::after {
+    content: '|';
+    font-size: 2.5rem;
+}
+
+header h3::before {
+    font-size: 2rem;
+    content: '';
+    animation: changeWord 10s infinite;
+}
+
+@keyframes changeWord {
+    0% {
+        content: 'F';
+    }
+
+    1% {
+        content: 'Fr';
+    }
+
+    2% {
+        content: 'Fre';
+    }
+
+    3% {
+        content: 'Free';
+    }
+
+    4% {
+        content: 'Freel';
+    }
+
+    5% {
+        content: 'Freela';
+    }
+
+    6% {
+        content: 'Freelan';
+    }
+
+    7% {
+        content: 'Freelanc';
+    }
+
+    8% {
+        content: 'Freelance';
+    }
+
+    9% {
+        content: 'Freelancer';
+    }
+
+    13% {
+        content: 'Freelancer';
+    }
+
+    15% {
+        content: 'Freelancer';
+    }
+
+    18% {
+        content: 'Freelancer';
+    }
+
+    19% {
+        content: 'Freelanc';
+    }
+
+    20% {
+        content: 'Freela';
+    }
+
+    21% {
+        content: 'Free';
+    }
+
+    22% {
+        content: 'Fr';
+    }
+
+    23% {
+        content: 'F';
+    }
+
+    24% {
+        content: '';
+    }
+
+    25% {
+        content: '';
+    }
+
+    26% {
+        content: 'D';
+    }
+
+    27% {
+        content: 'De';
+    }
+
+    28% {
+        content: 'Des';
+    }
+
+    29% {
+        content: 'Desi';
+    }
+
+    30% {
+        content: 'Desig';
+    }
+
+    31% {
+        content: 'Design';
+    }
+
+    32% {
+        content: 'Designe';
+    }
+
+    33% {
+        content: 'Designer';
+    }
+
+    36% {
+        content: 'Designer';
+    }
+
+    39% {
+        content: 'Designer';
+    }
+
+    42% {
+        content: 'Designer';
+    }
+
+    43% {
+        content: 'Designe';
+    }
+
+    44% {
+        content: 'Desi';
+    }
+
+    45% {
+        content: 'Des';
+    }
+
+    46% {
+        content: 'De';
+    }
+
+    47% {
+        content: 'D';
+    }
+
+    48% {
+        content: '';
+    }
+
+    49% {
+        content: 'P';
+    }
+
+    50% {
+        content: 'Ph';
+    }
+
+    51% {
+        content: 'Pho';
+    }
+
+    52% {
+        content: 'Phot';
+    }
+
+    53% {
+        content: 'Photo';
+    }
+
+    54% {
+        content: 'Photog';
+    }
+
+    55% {
+        content: 'Photogr';
+    }
+
+    56% {
+        content: 'Photogra';
+    }
+
+    57% {
+        content: 'Photograp';
+    }
+
+    58% {
+        content: 'Photograph';
+    }
+
+    59% {
+        content: 'Photographe';
+    }
+
+    60% {
+        content: 'Photographer';
+    }
+
+    63% {
+        content: 'Photographer';
+    }
+
+    66% {
+        content: 'Photographer';
+    }
+
+    69% {
+        content: 'Photographer';
+    }
+
+    70% {
+        content: 'Photogrape';
+    }
+
+    71% {
+        content: 'Photogr';
+    }
+
+    72% {
+        content: 'Photo';
+    }
+
+    73% {
+        content: 'Pho';
+    }
+
+    74% {
+        content: 'P';
+    }
+
+    75% {
+        content: '';
+    }
+
+    76% {
+        content: '';
+    }
+
+    77% {
+        content: 'D';
+    }
+
+    78% {
+        content: 'De';
+    }
+
+    79% {
+        content: 'Dev';
+    }
+
+    80% {
+        content: 'Deve';
+    }
+
+    81% {
+        content: 'Devel';
+    }
+
+    82% {
+        content: 'Develo';
+    }
+
+    83% {
+        content: 'Develop';
+    }
+
+    84% {
+        content: 'Develope';
+    }
+
+    85% {
+        content: 'Developer';
+    }
+
+    88% {
+        content: 'Developer';
+    }
+
+    91% {
+        content: 'Developer';
+    }
+
+
+    94% {
+        content: 'Developer';
+    }
+
+    95% {
+        content: 'Develope';
+    }
+
+    96% {
+        content: 'Develo';
+    }
+
+    97% {
+        content: 'Deve';
+    }
+
+    98% {
+        content: 'Dev';
+    }
+
+    99% {
+        content: 'D';
+    }
+
+    100% {
+        content: '';
+    }
+
+
+}
+
+.arrow-up {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0b65cc;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    z-index: 99;
+}
+
+/* About */
+
+.html-range {
+    width: 85%;
+}
+
+.js-range {
+    width: 90%;
+}
+
+.skills div div {
+    height: 10px;
+}
+
+.about-info h3::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 110%;
+    left: 0;
+}
+
+/* SERVICES */
+
+.services .line {
+    width: 50px;
+    height: 5px;
+}
+
+.card-icon {
+    width: 120px;
+    height: 120px;
+    border: 9px solid var(--main-color);
+}
+
+.card:hover .card-icon {
+    background-color: var(--main-color);
+    color: white;
+    border: 9px solid rgba(255, 255, 255, 0.44);
+}
+
+.card-icon i {
+    font-size: 35px;
+}
+
+.services .container h3 {
+    font-size: 20px;
+}
+
+.services .container p {
+    color: gray;
+}
+
+.our-information {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.5), rgba(0, 120, 255, 0.5)), url(../img/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+@media screen and (min-width: 0) and (max-width: 768px) {
+    .our-information {
+        height: 100vh;
+    }
+}
+
+.our-information .information-icon {
+    width: 75px;
+    height: 75px;
+    border: 10px solid white;
+}
+
+.our-information .information-icon i {
+    font-size: 20px;
+    color: white;
+}
+
+/* PORTFOLIO */
+
+.portfolio .line {
+    width: 50px;
+    height: 5px;
+}
+
+.portfolio-icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--main-color);
+    cursor: pointer;
+}
+
+.portfolio-icon i {
+    font-size: 25px;
+}
+
+.portfolio .container p {
+    font-size: 12px;
+}
+
+.portfolio .container .card {
+    overflow: hidden;
+}
+
+.portfolio .container img {
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.portfolio .container img:hover {
+    transform: scale(1.3);
+}
+
+/* Carousel */
+
+.carousel {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)), url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 75vh;
+}
+
+.carousel img {
+    width: 150px;
+    height: 150px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    left: 0;
+    z-index: 1;
+}
+
+/* BLOG */
+
+.blog .line {
+    width: 50px;
+    height: 5px;
+}
+
+.post-footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.post a {
+    text-decoration: none;
+    color: black;
+}
+
+.post a:hover {
+    color: var(--main-color);
+}
+
+.post .box {
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* CONTACT US */
+
+.contact-us {
+    background-color: var(--main-color);
+}
+
+.contact-us .container-fluid {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)), url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contact-us h3::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 120%;
+    left: 0;
+}
+
+.contact-us .btn-container {
+    width: fit-content;
+    border: 5px solid rgba(0, 119, 255, 0);
+    transition: all 1s;
+}
+
+.contact-us .btn-container:hover {
+    border: 5px solid rgba(0, 119, 255, 0.44);
+    opacity: 0.8;
+}
+
+.icon-container div {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--main-color);
+    transition: all 0.5s;
+}
+
+.icon-container div:hover {
+    background-color: var(--main-color);
+    color: white;
+    border: 4px solid rgba(255, 255, 255, 0.44);
+}
